@@ -12,7 +12,7 @@ HEADERS := \
 	gps.h \
 	hardware.h \
 
-CFLAGS := -mmcu=$(MMCU) -Os -DF_CPU=$(F_CPU) -std=c99 \
+CFLAGS := -mmcu=$(MMCU) -flto -Os -DF_CPU=$(F_CPU) -std=c99 \
 	-Wall -Wextra -pedantic -Werror
 
 $(PROJECT).hex: $(PROJECT).out
