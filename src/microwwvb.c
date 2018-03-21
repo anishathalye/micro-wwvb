@@ -34,7 +34,7 @@ static inline void broadcast_time(
     int year,
     int max_transmissions
 );
-int is_leap_year(int year);
+static inline int is_leap_year(int year);
 static inline int day_of_year(int day, int month, int year);
 static inline int day_of_week(long day, long month, long year); // 0 => sunday
 static inline int is_daylight_savings_time(int day, int month, int year);
@@ -296,7 +296,7 @@ static inline void broadcast_time(
     }
 }
 
-int is_leap_year(int year) {
+static inline int is_leap_year(int year) {
     return (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
 }
 
