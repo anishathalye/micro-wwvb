@@ -3,7 +3,7 @@
 // set lfuse to 0x5E for 20 MHz xtal
 // note that this code depends on the processor running at 20 MHz
 //
-// Copyright (c) 2016 Anish Athalye
+// Copyright (c) Anish Athalye
 
 #if (F_CPU != 20000000)
 #error "Only 20 MHz CPU supported"
